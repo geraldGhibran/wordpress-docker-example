@@ -11,7 +11,24 @@ docker run -it -d --name wpadminapps -p 82:82 wpadmin
 
 ```
 
-Setup database
+Run command below to check current running container
+
+```
+docker ps
+```
+
+Next, enter the container
+```
+docker exec -it containerid /bin/bash
+```
+
+or
+
+```
+docker exec -it containerid /bin/sh
+```
+
+Setup database inside container
 
 ```
 mysql -u root
