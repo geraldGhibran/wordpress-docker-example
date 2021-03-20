@@ -33,7 +33,7 @@ Setup database inside container
 ```
 mysql -u root
 CREATE DATABASE wordpress CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-GRANT ALL ON wordpress.* TO 'username'@'localhost' IDENTIFIED BY 'password';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '<password>';
 FLUSH PRIVILEGES;
 ```
 
